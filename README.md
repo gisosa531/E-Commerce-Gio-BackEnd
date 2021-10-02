@@ -49,13 +49,21 @@ Thanks to:
 * [https://github.com/gisosa531/E-Commerce-Gio-BackEnd](https://github.com/gisosa531/E-Commerce-Gio-BackEnd)
 
 ## Images/Videos
+* Part 1: Setting Up and Categories Section
 
+https://user-images.githubusercontent.com/84998291/135702920-f0585fb9-e7fa-4fe4-bddb-f2c8c011c09d.mp4
 
+* Part 2: Products Section
 
-https://user-images.githubusercontent.com/84998291/135701496-225e8cec-0889-466a-810e-d5f6a128b78e.mp4
+https://user-images.githubusercontent.com/84998291/135702980-7b5b7658-846f-4d77-9ae6-b4235327ce06.mp4
 
+* Part 3: Tags Section
 
+https://user-images.githubusercontent.com/84998291/135703008-4ea272b9-0751-4889-acc2-2eae28930652.mp4
 
+Full Video:
+[https://watch.screencastify.com/v/TyA36XIJivEJc6MkXI5o] (https://watch.screencastify.com/v/TyA36XIJivEJc6MkXI5o
+)
 
 ## Contact Information
 If you have any problems concerning the repo, please file an issue or email me at 
