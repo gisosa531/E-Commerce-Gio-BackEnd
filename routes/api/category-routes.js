@@ -45,11 +45,12 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   // create a new category
-  const categoryInfo = await Category.create({
-    category_data: req.body.category_data,
-  })
-  .then((category) => res.status(200).json(category))
-  .catch((err) => res.status(400).json(err));
+  try {
+  const categoryInfo = await Category.create(req.body)
+    res.status(200).json(categoryInfo);
+   } catch(err) { 
+     res.status(400).json(err);
+  }
 });
 
 router.put('/:id', async (req, res) => {

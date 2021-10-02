@@ -4,7 +4,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // The `/api/products` endpoint
 
 // get all products
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   const productInfo = await Product.findAll({
@@ -13,11 +13,15 @@ router.get('/', (req, res) => {
         model: Category,
       },
       {
-        model: Tag ,
+        model: Tag,
         through: ProductTag,
+        as :"products_tag"
       },
     ],
-  }).then((products) => res.json(products))
+  })
+  .then((product) =>
+   res.json(product
+    ))
   .catch((err) => {
     console.log(err);
     res.status(500).json(err);
@@ -25,7 +29,7 @@ router.get('/', (req, res) => {
 });
 
 // get one product
-router.get('/:id',async (req, res) => {
+router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   const productInfo = await Product.findOne({
     where: {
@@ -38,12 +42,15 @@ router.get('/:id',async (req, res) => {
       {
         model: Tag,
         through: ProductTag,
+        as :"products_tag"
       },
     ],
-  }).then((products) => res.json(products))
+  })
+  .then((product) =>
+   res.json(product))
     .catch(err => {
       console.log(err);
-      res.status(400).json(err);
+      res.status(500).json(err);
     });
 });
 
@@ -51,10 +58,10 @@ router.get('/:id',async (req, res) => {
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
+      "product_name": "Basketball",
+      "price": 200.00,
+      "stock": 3,
+      "tagIds": [1, 2, 3, 4]
     }
   */
   Product.create(req.body)
