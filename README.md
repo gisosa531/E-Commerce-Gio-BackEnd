@@ -45,13 +45,16 @@ Thanks to:
 * [google.com](google.com)
 * [https://expressjs.com/](https://expressjs.com/)
 
-## Deployed Heroku Site and GitHub Repo:
+## GitHub Repo:
 * [https://github.com/gisosa531/E-Commerce-Gio-BackEnd](https://github.com/gisosa531/E-Commerce-Gio-BackEnd)
 
 ## Images/Videos
 
 
-https://user-images.githubusercontent.com/84998291/135701437-bd965a5a-668b-487b-8101-ef118f97febf.mp4
+
+https://user-images.githubusercontent.com/84998291/135701496-225e8cec-0889-466a-810e-d5f6a128b78e.mp4
+
+
 
 
 ## Contact Information
