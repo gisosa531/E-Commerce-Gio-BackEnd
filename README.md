@@ -49,7 +49,10 @@ Thanks to:
 * [https://github.com/gisosa531/E-Commerce-Gio-BackEnd](https://github.com/gisosa531/E-Commerce-Gio-BackEnd)
 
 ## Images/Videos
-<img src="./images/HerokuSiteGio.png" alt="The start page of the deployed Heroku Note Site">
+
+
+https://user-images.githubusercontent.com/84998291/135701437-bd965a5a-668b-487b-8101-ef118f97febf.mp4
+
 
 ## Contact Information
 If you have any problems concerning the repo, please file an issue or email me at 
